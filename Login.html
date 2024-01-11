@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="linslime的个人主页">
+    <meta name="keywords" content="ACGN">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/Login.css">
+</head>
+<body>
+   
+    <div class="register_logo dl">
+          <h1 >登录</h1>
+          <div class="wholebox">
+            <div class = "zc"><a href="./register.html">注册</a></div>
+            
+            <div class="contain">
+            <form name="myForm" action="./index.html" onsubmit="return validateForm()" method="post">
+              <div class="gap">
+              <div class="box">
+              <label for="user">用户名：</label>
+              </div>
+              <input type="text" id="user"  placeholder="请输入用户名" >
+            </div>
+          
+            <div class="gap">
+              <div class="box">
+              <label for="password">密码：</label>
+            </div>
+              <input type="password" id="password"  placeholder="请输入密码" >
+              </div>
+              <input type="submit" value="登录" name='submit' id="submit">
+            </form>
+          </div>
+          </div>
+          </div>
+        
+          <script>
+            var body_list = document.querySelector('body');
+            var inputs = document.querySelectorAll('#submit');
+            var divs = body_list.querySelectorAll('.register_logo');
+            for(var i = 0; i < divs.length ;i++){
+                lis[i].setAttribute('index', i);
+                lis[i].onclick = function(){
+                  var index = this.getAttribute('index');
+                  for(var i = 0; i<divs.length;i++){
+                    divs[i].style.display = 'none';
+                  }
+                  dis[index].style.display = 'block';
+                }
+            }
+          </script>
+        <script> 
+          function testClk(){ 
+            var obj = document.getElementById("org"); 
+            var sel = document.getElementById("country"); 
+            if (sel.value == "other") { 
+              var input1 = document.createElement('input');
+               input1.setAttribute('type', 'text');
+                input1.setAttribute('name', 'countrywrite'); 
+                obj.insertBefore(input1,null);
+              } }
+           </script> 
+        
+        <script>
+          function validateForm(){
+          var x=document.forms["myForm"]["name"].value;
+          var matches = x.match(/\d+/g);
+        if (matches != null) {
+            alert('输入含有数字');
+            return false;
+        }
+          }
+          </script>
+</body>
+</html>

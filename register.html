@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="linslime的个人主页">
+    <meta name="keywords" content="ACGN">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/Login.css">
+</head>
+<body>
+    <div class="register_logo ">
+        <h1 >注册</h1>
+        <div class="wholebox">
+            <div class = "zc"><a href="./Login.html">登录</a></div>
+          <div class="contain">
+          <form name="myForm"  method="post">
+            <div class="gap">
+            <div class="box">
+            <label for="user">用户名：</label>
+            </div>
+            <input type="text" id="user"  placeholder="linslime" >
+          </div>
+        
+          <div class="gap">
+            <div class="box">
+            <label for="password">密码：</label>
+          </div>
+            <input type="password" id="password"  placeholder="密码不少于8位" >
+            </div>
+            <div class="gap">
+                <div class="box">
+                <label for="user">邮箱</label>
+                </div>
+                <input type="email" id="user"  placeholder="请输入邮箱" >
+              </div>
+        
+            <div class="gap">
+          <div class="box">
+            <laber for="sex">性别</laber>
+          </div>
+            <input type="radio" name="sex"  id="man1" value="1" />
+              <label for="man1">男</label>
+              <input type="radio" name="sex" id="man2" value="0" />
+              <label for="man2">女</label>
+              </div>
+        
+              <div class="gap">
+              <div class="box">
+              <label for="oeder">爱好</label>
+              </div>
+              <input id="a1" type="checkbox" name="love" value="a" />
+              <label for="a1">游戏</label>
+              <input id="b1" type="checkbox" name="love2" value="b" />
+              <label for="b1">动漫</label>
+              <input id="c1" type="checkbox"  name="love3" value="c"/>
+              <label for="c1">小说</label>
+              </div>
+            <input type="submit" value="注册" name='submit' id="submit">
+          </form>
+        </div>
+        </div>
+    </div>
+   
+          <script>
+            var body_list = document.querySelector('body');
+            var inputs = document.querySelectorAll('#submit');
+            var divs = body_list.querySelectorAll('.register_logo');
+            for(var i = 0; i < divs.length ;i++){
+                lis[i].setAttribute('index', i);
+                lis[i].onclick = function(){
+                  var index = this.getAttribute('index');
+                  for(var i = 0; i<divs.length;i++){
+                    divs[i].style.display = 'none';
+                  }
+                  dis[index].style.display = 'block';
+                }
+            }
+          </script>
+        <script> 
+          function testClk(){ 
+            var obj = document.getElementById("org"); 
+            var sel = document.getElementById("country"); 
+            if (sel.value == "other") { 
+              var input1 = document.createElement('input');
+               input1.setAttribute('type', 'text');
+                input1.setAttribute('name', 'countrywrite'); 
+                obj.insertBefore(input1,null);
+              } }
+           </script> 
+        
+        <script>
+          function validateForm(){
+          var x=document.forms["myForm"]["name"].value;
+          var matches = x.match(/\d+/g);
+        if (matches != null) {
+            alert('输入含有数字');
+            return false;
+        }
+          }
+          </script>
+</body>
+</html>

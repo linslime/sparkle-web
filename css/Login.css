@@ -1,0 +1,134 @@
+
+
+input[type=text],select {
+    width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.7);
+}
+input[type=password],select {
+    width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.7);
+}
+input[type=email],select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.7);
+  }
+  input[type=submit] { 
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+    text-shadow: 0 0 10px;
+    letter-spacing: 1px;
+    text-align: center;
+  margin-left:40%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+input[type=submit]:hover {
+  background-color:rgba(0, 0, 0, 1) ;
+}
+input[type=reset]:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+div {
+  display: block;
+}
+.box
+{
+    width: 80%;
+  margin-bottom: 5px;
+}
+.wholebox
+{
+    background-color: rgb(256,256,256,0.5);
+  width:100%;
+  border-radius: 7px;
+  
+}
+.gap
+{
+  margin:5px 10px;
+}
+.contain
+{
+  padding: 50px 50px;
+  display: block;
+}
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  resize: none;
+}
+.register_logo
+{
+    position: relative;
+    width:500px;
+    margin:auto;
+    padding-bottom:100px;
+}
+.register_logo h1 {
+    color: #fff;
+    text-shadow: 0 0 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.link
+{
+  display: block;
+  color:white;
+  background-color: #4CAF50;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.link:hover
+{
+    background-color: #45a049;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+.zc{
+  
+  float:right;
+}

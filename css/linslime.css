@@ -1,0 +1,31 @@
+.selfintro{
+    margin-top: 10px;
+    background-color: rgb(256,256,256,0.5);
+}
+
+.contact{
+    margin-top: 10px;
+    background-color: rgb(256,256,256,0.5);
+}
+
+.message{
+    margin-top: 10px;
+    background-color: rgb(256,256,256,0.5);
+}
+
+.message-board{
+    margin-top: 10px;
+    background-color: rgb(256,256,256,0.5);
+}
+
+.message-board .message-list li p{
+    margin-left: 20px;
+}
+
+.message-board .message-list li{
+    margin-bottom: 10px;
+}
+
+.message-board .message-list li a{
+    float:right;
+}

@@ -1,0 +1,132 @@
+/* 版新的公共类 */
+.container{
+    width:778px;
+    margin: 0 auto;
+}
+
+/* 主导航模块：.SPARKLE-main-nav */
+.SPARKLE-main-nav {
+    height:70px;
+    background-color: rgb(256,256,256,0.5);
+}
+
+.SPARKLE-main-nav nav{
+    margin-left: 10px;
+}
+
+.SPARKLE-main-nav nav li{
+    /* margin: 0 auto; */
+   float:left;
+   height:70px;
+   margin-right: 48px;
+   line-height: 70px;
+}
+
+.SPARKLE-main-nav nav a:hover {
+    color: #51c4d3;
+    border-bottom:1px solid #51c4d3;
+    padding-bottom: 7px;
+}
+
+.SPARKLE-main-nav .shortcut{
+    margin-right: 20px;
+    line-height: 70px;
+}
+
+.SPARKLE-main-nav .search{
+    width:172px;
+    height:30px;
+    margin-top:20px;
+    margin-left:34px;
+    /* ps */
+    background-color: orange;
+}
+
+.SPARKLE-main-nav .search input{
+    width:172px;
+    height:30px;
+    padding-left: 31px;
+}
+/*左侧导航栏*/
+.SPARKLE-left-nav{
+    position: fixed;
+    top:0;
+    bottom:0;
+    width:200px;
+    background-color:rgb(256,256,256,0.5);
+    left:165px;
+}
+.SPARKLE-left-nav .logo{
+    width:200px;
+}
+.SPARKLE-left-nav .logo img{
+    width:200px;
+}
+.SPARKLE-left-nav nav li{
+    height:50px;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+/* 网站右侧栏 */
+.SPARKLE-right{
+    position: fixed;
+    top:0;
+    bottom:0;
+    width:300px;
+    background-color:rgb(256,256,256,0.5);
+    right:65px;
+}
+/* 宣传服务 */
+.SPARKLE-service{
+    height: 174px;
+    background-color: #333;
+}
+
+.SPARKLE-service .container{
+    width: 1393px;
+    height: 173px;
+    background-color: pink;
+}
+
+.SPARKLE-service .container a{
+    float: left;
+    width :33.33%;
+    height: 173px;
+    text-align: center;
+    line-height: 173px;
+    font-size:28px;
+    color:#fff;
+}
+
+.SPARKLE-service .container a::before{
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height:58px;
+    margin-right: 19px;
+    vertical-align: middle;
+}
+
+/* 版权信息 */
+.SPARKLE-copyright{
+    height: 100px;
+    background-color:rgb(256,256,256,0.5);
+}
+
+.SPARKLE-copyright .container{
+    height: 100px;
+    padding-top:30px;
+    box-sizing:border-box;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.SPARKLE-copyright .container a{
+    color:#666;
+}
+
+.SPARKLE-copyright .container p:first-child{
+    height: 35px;
+}

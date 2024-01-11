@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linslime</title>
+    <meta name="description" content="linslime的个人主页">
+    <meta name="keywords" content="ACGN">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/linslime.css">
+</head>
+<body>
+     <!-- 头部文件 -->
+     <header>
+        <!-- 主导航模块 -->
+        <div class="SPARKLE-main-nav container" >
+           <!-- 导航  -->
+            <nav class="fl">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="javascript:;">Animation</a></li>
+                    <li><a href="javascript:;">Comic</a></li>
+                    <li><a href="javascript:;">Game</a></li>
+                    <li><a href="./novel.html">Novel</a></li>
+                    <li><a href="javascript:;">Music</a></li>
+                    <li><a href="javascript:;">Photography</a></li>
+                </ul>
+                
+            </nav>
+            <div class="shortcut fr">
+                <a href="./Login.html">Login</a>
+            </div>
+        </div>
+        <div class="SPARKLE-left-nav">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">网站首页</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的好友</a></li>
+                    <li><a href="#">管理入口</a></li>
+                    <li><a href="./linslime.html">关于linslime</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+        <!-- 网站右侧栏 -->
+        <div class="SPARKLE-right">
+
+        </div>
+    </header> 
+    <!-- <hr class="container">
+    <hr class="container"> -->
+     <div class = "selfintro container">
+         <h1>个人介绍</h1>
+         <hr>
+         <p>我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime我是linslime</p>
+     </div>
+
+     <div class = "contact container">
+         <h1>联系方式</h1>
+         <hr>
+         <ul>
+             <li><span>电话：</span>19157700322</li>
+             <li><span>QQ:</span>2636221764</li>
+             <li><span>邮箱:</span>l2636221764@qq.com</li>
+         </ul>
+     </div>
+
+     <div class = "message container">
+         <h1>添加留言</h1>
+         <hr>
+         <div  >
+             <div>
+                <input id = "myname" type="text"  placeholder="小刚">
+                <!-- <textarea name="" id="myname" cols="10" rows="1">小刚</textarea> -->
+                <button id = "messagesend">发布</button>
+             </div>
+            
+            <!--  -->
+            <textarea name="" id="text" cols="" rows="10">我是小刚</textarea>
+         </div>
+     </div>
+     <div class = "message-board container">
+         <ul class = "message-list" id = "message-list">
+             <li>
+                <span>小明</span>
+                <a href="javascript:;">删除</a>
+                <br>
+                 <p>我是小明我是小明我是小明我是小明我是小明我是小明我是小明我是小明我是小明我是小明</p>
+             </li>
+             <li>
+                <span>小红</span>
+                <a href="javascript:;">删除</a>
+                <br>
+                 <p>我是小红我是小红我是小红我是小红我是小红我是小红我是小红我是小红我是小红我是小红</p>
+             </li>
+         </ul>
+         <script>
+             var btn = document.getElementById("messagesend");
+             var text = document.getElementById('text');
+             var ul = document.getElementById('message-list');
+             var myname = document.getElementById('myname');
+             console.log(myname);
+             btn.onclick = function(){
+                 if(text.value == ''){
+                     alert('您没有输入内容');
+                     return false;
+                 }else if(myname.value == ''){
+                     alert('您没有输入昵称');
+                     return false;
+                 }else{
+                     var li = document.createElement('li');
+                     var span = document.createElement('span');
+                     var br=document.createElement('br');
+                     var p=document.createElement('p');
+                     p.innerHTML = text.value ;
+                    
+                     span.innerHTML = myname.value + "<a href='javascript:;'>删除</a>";
+                    
+                     ul.insertBefore(li,ul.children[0]);
+                     li.appendChild(span);
+                     li.appendChild(br);
+                     li.appendChild(p);
+                     var as = document.querySelectorAll('a');
+                     for(var i = 0;i < as.length; i++){
+                         as[i].onclick = function(){
+                            ul.removeChild(li);
+                         }
+                     }
+                 }
+                 
+             }
+         </script>
+     </div>
+       <!-- 底部模块 -->
+    <footer>
+        
+        <!-- 版权信息 -->
+        <hr class="container">
+        <div class="SPARKLE-copyright container">
+            
+            <div class="container">
+                <p>
+                    <a href="#">关于我们</a>
+                    <a href="#">帮助中心</a>
+                    <a href="#">搜索推荐</a>
+                    <a href="#">友情推荐</a>
+                </p>
+                <p>CopyRight @ <a href="#">linslime</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
